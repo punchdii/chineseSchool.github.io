@@ -1,13 +1,8 @@
-/* General Styles */
-* {
-    box-sizing: border-box;
-    /* Ensure consistent box-sizing */
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
     overflow-x: hidden;
     /* Prevent horizontal overflow */
 }
@@ -74,6 +69,7 @@ header nav ul li .dropdown-content a:hover {
 }
 
 header nav ul li:hover .dropdown-content {
+    width: 100%;
     display: block;
 }
 
@@ -86,7 +82,6 @@ header nav ul li:hover .dropdown-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .hero-image {
@@ -125,8 +120,8 @@ header nav ul li:hover .dropdown-content {
 /* Programs Section Styles */
 .programs {
     background-color: #000;
+    padding: 50px 20px;
     text-align: center;
-    padding: 40px 0;
 }
 
 .programs h2 {
@@ -197,24 +192,41 @@ header nav ul li:hover .dropdown-content {
     text-align: center;
 }
 
-/* Footer Styles */
-.bottom {
+.botttom {
     background-color: rgba(148, 4, 4, 0.402);
 }
+
+.arrow {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 80px;
+    cursor: pointer;
+    border-radius: 90%;
+    z-index: 1;
+}
+
 
 .footer-contentWrapper {
     background-color: #1f1f1f;
     color: #ccc;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 20px;
     justify-content: space-evenly;
+
+
+
 }
 
 .footer-block {
     background-color: #1f1f1f;
     color: #ccc;
+    flex-wrap: wrap;
     padding: 30px;
-    flex: 1;
+
+
+
 }
